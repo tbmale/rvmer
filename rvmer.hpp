@@ -1,7 +1,8 @@
 #pragma once
-#include<dummyreader.h>
+#include"rvmreader.h"
+#include"rvmparser.h"
 
-class rvmreaderlib : public DummyReader{
+class rvmreaderlib : public RVMReader{
 public:
   rvmreaderlib();
   virtual ~rvmreaderlib();
@@ -45,4 +46,4 @@ public:
 
   virtual void createFacetGroup(const std::array<float, 12>& matrix, const std::vector<std::vector<std::vector<std::pair<Vector3F, Vector3F> > > >& vertexes);
 };
-}
+
