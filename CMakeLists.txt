@@ -1,6 +1,15 @@
 cmake_minimum_required(VERSION 2.6)
 project(rvmer)
-include_directories( "${PROJECT_DIR}pmuc/src/api" "${PROJECT_DIR}pmuc/src/common")
+
+SET(CARVE_SOURCE_DIR ${rvmer_SOURCE_DIR}/Carve)
+SET(CARVE_BINARY_DIR ${rvmer_BINARY_DIR})
+add_subdirectory(Carve)
+
+include_directories( 
+  "${PROJECT_DIR}pmuc/src/api" 
+  "${PROJECT_DIR}pmuc/src/common"
+  "${PROJECT_DIR}Carve/include"
+  )
 set (CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/bin)
 
 find_package(eigen3)
