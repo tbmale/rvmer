@@ -1,3 +1,6 @@
 [submodule "pmuc"]
 	path = pmuc
 	url = https://github.com/tbmale/pmuc.git
+[submodule "ifcplusplus"]
+	path = ifcplusplus
+	url = https://github.com/Supporting/ifcplusplus.git
